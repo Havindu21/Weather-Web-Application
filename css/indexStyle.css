@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(180deg, #2a2052, #221c39);
+    background: linear-gradient(180deg, #19142D, #3c096c);
 }
 .navbar-bg {
     background-color: #1b1b28
@@ -94,7 +94,7 @@ body{
 } */
 td {
     text-align: center;
-    border: 1px solid #000; 
+    /* border: 1px solid #000;  */
     padding: 40px;
     color: #fff;
 }
@@ -162,10 +162,11 @@ td {
     width: 33%;
     height: 60vh;
     /* align-content: center; */
+    border-color: #251d46;
 
   }
   .border-1{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 125%;
     /* display: flex;
     align-items: center; */
@@ -173,6 +174,9 @@ td {
     /* fill: none; */
     height: fit-content;
     /* color: #fff; */
+    background-color: #251d46;
+    border-radius: 10px;
+
   }
   .history-table{
     border-radius: 15px;
@@ -181,14 +185,17 @@ td {
   }
   .forecast-table{
     width: 100%;
+    height: 100%;
   }
 
   .history-table td{
     padding: 20px;
-    font-size: 20px;
+    /* width: 150px; */
+    /* font-size: 20px; */
+    /* border-color: #251d46; */
   }
   .border-2{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 104%;
     height: 100%;
     margin-left: -2%;
@@ -201,16 +208,63 @@ td {
 
   .history-table div{
     /* border: 1px solid white; */
-    background: #34343b;
+    background: #19142D;
     border-radius: 10px;
    
   }
-  .history-table div:hover{
+  /* .history-table div:hover{
     border: 1px solid white;
-  }
+  } */
   .history-table div label{
     margin: 4%;
+    font-size: 20px;
   }
   .table-4 td{
-    height: 25px;
+    height: 5px;
   }
+.forecast-title{
+    height: 200px;
+    font-size: 20px;
+}
+/* .forecast-table td{
+    font-size: 20px;
+} */
+.map-title{
+    width: 90vw;
+    height: 40px;
+    display: flex;
+    /* color: aliceblue; */
+    /* background-color: aqua; */
+    background: #6655aa;
+    /* align-self: center; */
+    margin-left: 67px;
+    margin-top: 3%;
+    border-radius: 10px;
+    /* justify-items: center; */
+    /* vertical-align: middle; */
+    text-align: center;
+}
+.map-title-text{
+    text-align: center;
+    vertical-align: middle;
+    /* margin-top: 10px; */
+}
+.footer{
+    background-color: #1b1b28;
+}
+.footer-title{
+    color: white;
+}
+
+.map{
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.footer-text{
+    color: white;
+}
+.history-title{
+    font-family: 'Bevan', serif;
+    font-size: 36px;
+}
