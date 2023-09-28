@@ -199,6 +199,8 @@ td {
     width: 104%;
     height: 100%;
     margin-left: -2%;
+    background-color: #251d46;
+    border-radius: 10px;
   }
   .past-days{
     /* color: antiquewhite; */
@@ -223,8 +225,10 @@ td {
     height: 5px;
   }
 .forecast-title{
-    height: 200px;
-    font-size: 20px;
+    /* height: 10px; */
+    font-family: 'Bevan', serif;
+    font-size: 36px;
+    margin-top:100%;
 }
 /* .forecast-table td{
     font-size: 20px;
@@ -267,4 +271,32 @@ td {
 .history-title{
     font-family: 'Bevan', serif;
     font-size: 36px;
+}
+.card{
+    background: #19142D;
+}
+.card-title{
+    color: white;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+.forecast-icon{
+    width: 40%;
+    align-self: center;
+}
+.weather-title{
+    color: white;
+}
+.card-body td{
+    padding: 8%;
+    text-align: initial;
+}
+.card-body table{
+    margin-left: 7%;
+}
+
+.forecast-item-icon{
+    width: 40%;
 }
