@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
+
+//     });
+
     let btnSearch = document.getElementById("btnSearch");
     btnSearch.addEventListener("click", () => {
         let location = $("#searchTxt").val();
         searchLocation(location);
-    });
 
     function searchLocation(location) {
         let mainWeatherLocation = document.getElementById("main-weather-location");
