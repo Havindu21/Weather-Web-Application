@@ -397,5 +397,7 @@ input:checked + .nav-item label svg.moon {
 	fill:#fff;
 }
 .darkmodeImg{
-    width: 30px;
+    width: 20px;
+    cursor: pointer;
+    margin-top: 10px;
 }

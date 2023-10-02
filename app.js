@@ -2,6 +2,9 @@
 
 //     });
 
+getLocation();
+
+
 document.addEventListener("DOMContentLoaded", function () {
     let location = document.getElementById("searchTxt");
     let btnSearch = document.getElementById("btnSearch");
@@ -172,3 +175,17 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
 })
+
+function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.watchPosition(showPosition);
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  function showPosition(position) {
+      let lon = position.coords.longitude;
+       let lat = position.coords.latitude;
+       console.log(lon,lat);
+       searchLocation(lat+","+lon);
+  }
