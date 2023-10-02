@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         $.ajax({
             method: "GET",
-            url: `http://api.weatherapi.com/v1/current.json?key=ae9aefbe24a04460aaf165345230110&q=${location}`,
+            url: `https://api.weatherapi.com/v1/current.json?key=ae9aefbe24a04460aaf165345230110&q=${location}`,
             success: (data) => {
                 mainWeatherLocation.innerHTML = data.location.name;
                 mainWeatherTemp.innerHTML = data.current.temp_c + "°C";
@@ -63,7 +63,7 @@ let btnDarkImage = document.getElementById("btnDarkImage");
 btnDarkImage.addEventListener("click",()=>{
   if(mode%2==0){
     document.body.style.backgroundColor = "#FFFFFF"
-    
+
     console.log(mode);
 
     mode++;
